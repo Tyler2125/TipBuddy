@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+.App {
+  text-align: center;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+input {
+  width: 91%;
+  box-shadow: 2px 5px 4px darkgray;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+select {
+  width: 100%;
+  padding: 14px 20px;
+}
+button {
+  margin: 4% 2% 0 2%;
+}
+/* The Form */
+.tip-form {
+  background-color: #fffbf5;
+  border-radius: 20px;
+  height: 600px;
+  width: 600px;
+  display: flex;
+  box-shadow: 5px 3px 5px #787a91;
+  align-items: center;
+  margin-top: 10%;
+  position: relative;
+}
+.dollar {
+  color: #50d890;
+}
+
+#Calculate {
+  font-family: "Roboto", sans-serif;
+  background-color: #0014ff;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 20px;
+  transition: 1s;
+  opacity: 0.5;
+}
+#note {
+  color: red;
+}
+#reset {
+  background: #e96479;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 20px 30px;
+  transition: 1s;
+  opacity: 0.5;
+}
+#Calculate:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-image: linear-gradient(100deg, #0014ff, #0014ff);
+}
+#reset:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.results {
+  margin-top: 5%;
+  margin-rjght: 5%;
+  transition: 0.5s;
+  padding: 1.5em;
+}
+/* footer css */
+#footer {
+  position: relative;
+  margin-top: 10%;
+}
+.icons {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.icons:hover {
+  cursor: pointer;
+  color: #060047;
+}
+/* Darkmode */
+.Dark {
+  background-color: #222831;
+  color: #eeeeee;
+}
+.Dark .tip-form {
+  background-color: inherit;
+  color: inherit;
+  box-shadow: 5px 3px 5px #000000;
+}
+.Dark input {
+  background-color: inherit;
+  color: inherit;
+  box-shadow: 4px 4px #000000;
+  border: none;
+}
+.Sun {
+  top: 0;
+  color: #eeb76b;
+  background-color: #fa7d09;
+  border-radius: 10px;
+  padding: 1%;
+  margin-left: 40%;
+  margin-top: 1%;
+  float: right;
+  transition: 0.5s;
+  position: absolute;
+}
+.Sun:hover {
+  background-color: #eeb76b;
+  color: #fa7d09;
+}
+.Moon {
+  top: 0;
+  color: #e7f6f2;
+  background-color: #635985;
+  border-radius: 10px;
+  padding: 1%;
+  margin-left: 40%;
+  margin-top: 1%;
+  float: right;
+  transition: 1s;
+  position: absolute;
+}
+.Moon:hover {
+  background-color: #18122b;
+  color: #6d67e4;
+}
+.Sun,
+.Moon:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .tip-form {
+    width: 400px;
+    margin-left: 1%;
+  }
+  input {
+    width: 80%;
+  }
+  .Moon {
+    margin-left: 38%;
+  }
+  .Sun {
+    margin-left: 38%;
+  }
+}
