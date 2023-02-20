@@ -149,14 +149,20 @@ button {
   .tip-form {
     width: 400px;
     margin-left: 1%;
+    margin-bottom: 2%;
+    border: solid 1px black;
   }
   input {
     width: 80%;
   }
   .Moon {
     margin-left: 38%;
+    margin-bottom: 6%;
+    position: absolute;
+    padding: 0;
   }
   .Sun {
     margin-left: 38%;
+    padding: 0;
   }
 }
